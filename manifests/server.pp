@@ -28,7 +28,7 @@ class ssh::server ($ensure = 'running', $enable = true, $autoupdate = false, $co
       $supported = true
       $pkg_name = ['openssh-server']
       $svc_name = 'sshd'
-      $config = '/etc/ssh/sshd_config'
+      $config_file = '/etc/ssh/sshd_config'
 
       if $config == undef {
         $config_tpl = template("${module_name}/default-redhat-sshd_config.erb")
@@ -44,7 +44,7 @@ class ssh::server ($ensure = 'running', $enable = true, $autoupdate = false, $co
 
   package { $pkg_name: ensure => $package_ensure }
 
-  file { $config:
+  file { $config_file:
     ensure  => file,
     owner   => 0,
     group   => 0,
@@ -58,7 +58,7 @@ class ssh::server ($ensure = 'running', $enable = true, $autoupdate = false, $co
     enable     => $enable,
     hasstatus  => true,
     hasrestart => true,
-    require    => [Package[$pkg_name], File[$config]],
+    require    => [Package[$pkg_name], File[$config_file]],
   }
 }
 
