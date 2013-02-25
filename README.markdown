@@ -1,0 +1,3 @@
+# puppet-ssh #
+
+This is the puppet-ssh module. It provides...

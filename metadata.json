@@ -1,0 +1,23 @@
+{
+  "name": "7terminals-ssh",
+  "author": "Francis Pereira",
+  "description": "",
+  "license": "",
+  "project_page": "https://github.com/7terminals/puppet-ssh",
+  "source": "https://github.com/7terminals/puppet-ssh",
+  "summary": "Puppet module to manage openSSH server and client",
+  "version": "",
+  "checksums": {
+    "Modulefile": "a82a835c760a90b67bd4139d142a4047",
+    "README.markdown": "ba397d468b5ff0fbbae35fcb707c3ee8",
+    "README.md": "4080322d7e878bb3cffd74171b4aaee1",
+    "Rakefile": "f37e6131fe7de9a49b09d31596f5fbf1",
+    "manifests\\init.pp": "191ca6c937165ea81314172725eca3ac",
+    "manifests\\server.pp": "52d7e5e4043b8dcaf75ebf27736bbc2f",
+    "spec\\spec.opts": "a600ded995d948e393fbe2320ba8e51c",
+    "spec\\spec_helper.rb": "3ea886dd135e120afa31e0aab12e85b0",
+    "templates\\default-redhat-sshd_config.erb": "d5615bb823de935774bf58feee13548e",
+    "tests\\init.pp": "b9e3108f3e558d902fa4685fa85a8213"
+  },
+  "dependencies": []
+}
