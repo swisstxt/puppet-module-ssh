@@ -50,6 +50,7 @@ class ssh::server ($ensure = 'running', $enable = true, $autoupdate = false, $co
     group   => 0,
     mode    => '0644',
     content => $config_tpl,
+    notify  => Service[$svc_name],
     require => Package[$pkg_name],
   }
 
