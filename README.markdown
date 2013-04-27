@@ -48,11 +48,12 @@ Valid arguments are running or stopped. Default is running.
 ####`enable`
 
 This parameter specifies whether the ssh daemon should start on system boot or not.
-Valid arguments are true or false. Default is true.
+Valid arguments are true or false. Defaults to true.
 
 ####`autoupdate`
 
 This parameter specifies whether the openssh server package should be updated when a new update is available or not.
+Valid arguments are true or false. Defaults to false.
 
 ####`config`
 
