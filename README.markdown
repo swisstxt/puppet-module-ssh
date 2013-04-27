@@ -19,6 +19,7 @@ Setup
 **What ssh affects:**
 
 * the sshd_config file located in /etc/ssh
+* whether the openssh-server package is installed or not
 * whether the openssh-server package is auto updated or not
 	
 ### Beginning with ssh
