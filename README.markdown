@@ -58,6 +58,7 @@ This parameter specifies whether the openssh server package should be updated wh
 This parameter specifies the ssh server configuration file.
 It must be present in the files directory of the caller module.
 
+If not specified, it defaults to a basic configuration of sshd provided with this module. You may use it as a base.
 
 Limitations
 ------------
@@ -71,7 +72,7 @@ The module has been tested on:
 * Debian 6.0 
 * Ubuntu 12.04
 
-Testing on other platforms has been light and cannot be guarsudoeed. 
+Testing on other platforms has been light and cannot be guaranteed. 
 
 Development
 ------------
@@ -82,6 +83,6 @@ Bug Reports
 Release Notes
 --------------
 
-**0.1.0**
+**0.0.1**
 
 First initial release.
