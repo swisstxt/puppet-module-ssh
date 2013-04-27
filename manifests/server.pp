@@ -1,16 +1,8 @@
-# Class: ssh::server
-#
-# This module manages ssh server
-#
-# Parameters: none
-#
-# Actions:
-#
-# Requires: see Modulefile
-#
-# Sample Usage:
-#
-class ssh::server ($ensure = 'running', $enable = true, $autoupdate = false, $config = undef) {
+class ssh::server (
+  $ensure     = 'running',
+  $enable     = true,
+  $autoupdate = false,
+  $config     = undef) {
   # validate parameters
   if !($ensure in ['running', 'stopped']) {
     fail('ensure parameter must be running or stopped')
