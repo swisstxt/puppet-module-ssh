@@ -49,7 +49,7 @@ class ssh::server (
     ensure  => file,
     owner   => 0,
     group   => 0,
-    mode    => '0644',
+    mode    => '0600',
     content => $config_tpl,
     notify  => Service[$svc_name],
     require => Package[$pkg_name],
